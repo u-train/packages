@@ -1,0 +1,25 @@
+{
+    "schema": 1,
+    "id": "deviserialiser",
+    "name": "Serialiser",
+    "isApp": false,
+    "version": "0.0.3",
+    "permissions": {
+        "client": {
+            "construct": true,
+            "networking": true,
+            "interface": true,
+            "input": true,
+            "json": true,
+            "reflection": true
+        },
+        "server": {
+            "construct": true,
+            "networking": true,
+            "interface": true,
+            "input": true,
+            "json": true,
+            "reflection": true
+        }
+    }
+}
