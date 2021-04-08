@@ -6,7 +6,7 @@
 ---------------------------------------------------------------
 -- Default chat system (client).
 return function()
-	local autoCollectionGrid = require("./collectionLayoutAuto.lua")
+	local autoCollectionGrid = require("shared/scripts/components/collectionLayoutAuto.lua")
 	local settings = require("shared/scripts/components/chatSettings.lua")
 
 	local active = false

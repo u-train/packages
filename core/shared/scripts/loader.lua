@@ -13,6 +13,10 @@ local components = require("./componentList.lua")
 
 local load;
 load = function(component, ...)
+    if not component then 
+        component = "all"
+    end
+
     if component == "all" then
         for k, v in pairs(components) do
             if (_SERVER and v.server) or (not _SERVER and v.client) then

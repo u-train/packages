@@ -16,5 +16,9 @@ return {
     chat = {
         client = true,
         server = true
+    }, 
+    playerList = {
+        client = true,
+        server = false
     }
 }
