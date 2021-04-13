@@ -34,7 +34,9 @@ load = function(component, ...)
         return error("'" .. component .. "' component doesn't define work for " .. (_SERVER and "servers" or "clients"), 2)
     end
 
-    return require((_SERVER and "server" or "client") .. "/scripts/components/" .. component .. ".lua")(...)
+    spawnThread(function()
+        require((_SERVER and "server" or "client") .. "/scripts/components/" .. component .. ".lua")(...)
+    end)
 end
 
 return load
