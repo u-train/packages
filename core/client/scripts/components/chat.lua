@@ -9,6 +9,9 @@ return function()
 	local autoCollectionGrid = require("shared/scripts/components/collectionLayoutAuto.lua")
 	local settings = require("shared/scripts/components/chatSettings.lua")
 
+	-- Don't render chat til we're connected
+	core.networking:waitFor("_connected")
+
 	local active = false
 	local preventGhostCount = false
 	local maxContentXDimension = 156

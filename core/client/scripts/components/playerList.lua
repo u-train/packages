@@ -1,5 +1,8 @@
 return function()
 
+	-- Don't render chat til we're connected
+	core.networking:waitFor("_connected")
+    
     local container = core.construct("guiFrame", {
 		parent = core.interface,
 		name = "_Client_PlayerList",
