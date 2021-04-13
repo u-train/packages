@@ -3,7 +3,7 @@
     "id": "devicore",
     "name": "devicore",
     "isApp": false,
-    "version": "1.0.14",
+    "version": "1.0.16",
     "permissions": {
         "client": {
             "construct": true,
