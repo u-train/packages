@@ -1,0 +1,24 @@
+{
+    "schema": 1,
+    "id": "devisuite",
+    "name": "Suite",
+    "isApp": true,
+    "version": "0.0.1",
+    "permissions": {
+        "client": {
+            "construct": true,
+            "networking": true,
+            "interface": true,
+            "input": true,
+            "json": true,
+            "scene": true,
+            "graphics": true,
+            "tween": true
+        }
+    },
+    "dependencies": {
+        "client": {
+            "deviap/serialiser": "latest"
+        }
+    }
+}
